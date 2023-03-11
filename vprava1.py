@@ -33,6 +33,10 @@
 # if sum == k:print(k,'-доскональне число')
 # else:print(k,'не є доскональним числом')
 
+
+# todo: Інтернет Магазин Smart. Ivanov M.V.
+
+
 s = int(input('ВВедіть суму покупки'))
 v=0
 if s<500:
@@ -48,3 +52,30 @@ print('Сума покупки-', s, 'грн')
 print('Сума снижки-', v, 'грн')
 print('Вам потрібно сплатити-', r, 'грн')
 print('Дякуємо за покупку')
+
+
+# todo: Кількість речень. Ivanov M.V.
+
+
+w=input('Введіть текст:')
+k=0
+n=len(w)
+for i in range(n):
+    l=str(w[i])
+    if l=='.' or l=='?':
+        k=k+1
+        print('Кількість речень:',k)
+
+
+# todo: НСД. Ivanov M.V.
+
+
+a=int(input('a='))
+b=int(input('b='))
+while a*b !=0:
+    if a>=b:
+        a=a%b
+    else:
+        b=b%a
+nsd=a+b
+print('Найбільший спільний дільник', nsd)
